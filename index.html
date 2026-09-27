@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saffron & Ember | Fine Dining</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>✦</span>
+        Saffron & Ember
+    </div>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#reservation">Reserve</a>
+    </nav>
+
+    <div class="nav-actions">
+
+        <button id="themeToggle" class="icon-btn">🌙</button>
+
+        <button id="cartButton" class="cart-btn">
+            🛒 <span id="cartCount">0</span>
+        </button>
+
+        <button id="mobileMenu" class="mobile-btn">☰</button>
+
+    </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">WELCOME TO SAFFRON & EMBER</p>
+
+        <h1>
+            Where every dish
+            <span>tells a story.</span>
+        </h1>
+
+        <p class="hero-text">
+            A modern culinary experience bringing together
+            flavors from India, Italy, Asia and the Mediterranean.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="primary-btn">
+                Explore Menu →
+            </a>
+
+            <a href="#reservation" class="secondary-btn">
+                Reserve a Table
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>4.9</strong>
+                <span>Google Rating</span>
+            </div>
+
+            <div>
+                <strong>25+</strong>
+                <span>Signature Dishes</span>
+            </div>
+
+            <div>
+                <strong>12</strong>
+                <span>Years of Taste</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="floating-card">
+            <span>🔥 Chef's Pick</span>
+            <strong>Truffle Butter Naan</strong>
+            <small>₹349</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="section about">
+
+    <div class="section-image about-image"></div>
+
+    <div class="about-content">
+
+        <p class="eyebrow">OUR STORY</p>
+
+        <h2>
+            Crafted with passion,
+            served with warmth.
+        </h2>
+
+        <p>
+            Saffron & Ember began with one simple idea:
+            bring people together through unforgettable food.
+        </p>
+
+        <p>
+            Our chefs combine traditional recipes with modern
+            techniques to create dishes that feel familiar,
+            exciting and completely unique.
+        </p>
+
+        <div class="about-features">
+
+            <div>
+                <span>🌿</span>
+                <strong>Fresh Ingredients</strong>
+                <small>Locally sourced whenever possible.</small>
+            </div>
+
+            <div>
+                <span>👨‍🍳</span>
+                <strong>Expert Chefs</strong>
+                <small>Passion on every plate.</small>
+            </div>
+
+            <div>
+                <span>✨</span>
+                <strong>Unique Experience</strong>
+                <small>Food, music and atmosphere.</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CUISINES -->
+
+<section class="section cuisines">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">EXPLORE</p>
+
+        <h2>Flavors from around the world</h2>
+
+        <p>
+            One table. Four cuisines. Endless possibilities.
+        </p>
+
+    </div>
+
+    <div class="cuisine-grid">
+
+        <div class="cuisine-card indian">
+            <div>
+                <span>🇮🇳</span>
+                <h3>Indian</h3>
+                <p>Rich spices & traditional recipes</p>
+            </div>
+        </div>
+
+        <div class="cuisine-card italian">
+            <div>
+                <span>🇮🇹</span>
+                <h3>Italian</h3>
+                <p>Handcrafted pasta & wood-fired classics</p>
+            </div>
+        </div>
+
+        <div class="cuisine-card asian">
+            <div>
+                <span>🥢</span>
+                <h3>Asian</h3>
+                <p>Bold flavors & aromatic dishes</p>
+            </div>
+        </div>
+
+        <div class="cuisine-card mediterranean">
+            <div>
+                <span>🌊</span>
+                <h3>Mediterranean</h3>
+                <p>Fresh, bright & healthy flavors</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MENU -->
+
+<section id="menu" class="section menu-section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">OUR MENU</p>
+
+        <h2>Something for every craving</h2>
+
+        <p>
+            Explore our chef-curated selection.
+        </p>
+
+    </div>
+
+
+    <div class="menu-tools">
+
+        <input
+            type="text"
+            id="menuSearch"
+            placeholder="🔍 Search dishes..."
+        >
+
+        <div class="category-buttons">
+
+            <button class="category active" data-category="all">
+                All
+            </button>
+
+            <button class="category" data-category="indian">
+                Indian
+            </button>
+
+            <button class="category" data-category="italian">
+                Italian
+            </button>
+
+            <button class="category" data-category="asian">
+                Asian
+            </button>
+
+            <button class="category" data-category="mediterranean">
+                Mediterranean
+            </button>
+
+            <button class="category" data-category="dessert">
+                Desserts
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="menuGrid" class="menu-grid">
+
+        <!-- ITEM 1 -->
+
+        <article
+            class="menu-card"
+            data-category="indian"
+            data-name="butter chicken"
+        >
+
+            <div class="food-image butter-chicken">
+                <span class="food-badge">Chef's Pick</span>
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title">
+
+                    <h3>Butter Chicken</h3>
+
+                    <button class="favorite">♡</button>
+
+                </div>
+
+                <p>
+                    Creamy tomato gravy, tender chicken
+                    and aromatic spices.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>₹449</strong>
+
+                    <button class="add-cart"
+                        data-name="Butter Chicken"
+                        data-price="449">
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ITEM 2 -->
+
+        <article
+            class="menu-card"
+            data-category="italian"
+            data-name="truffle pasta"
+        >
+
+            <div class="food-image truffle-pasta"></div>
+
+            <div class="food-content">
+
+                <div class="food-title">
+
+                    <h3>Truffle Pasta</h3>
+
+                    <button class="favorite">♡</button>
+
+                </div>
+
+                <p>
+                    Handmade pasta, parmesan and
+                    creamy black truffle sauce.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>₹549</strong>
+
+                    <button class="add-cart"
+                        data-name="Truffle Pasta"
+                        data-price="549">
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ITEM 3 -->
+
+        <article
+            class="menu-card"
+            data-category="asian"
+            data-name="thai curry"
+        >
+
+            <div class="food-image thai-curry"></div>
+
+            <div class="food-content">
+
+                <div class="food-title">
+
+                    <h3>Thai Green Curry</h3>
+
+                    <button class="favorite">♡</button>
+
+                </div>
+
+                <p>
+                    Fragrant coconut curry with vegetables
+                    and jasmine rice.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>₹399</strong>
+
+                    <button class="add-cart"
+                        data-name="Thai Green Curry"
+                        data-price="399">
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ITEM 4 -->
+
+        <article
+            class="menu-card"
+            data-category="mediterranean"
+            data-name="greek salad"
+        >
+
+            <div class="food-image greek-salad"></div>
+
+            <div class="food-content">
+
+                <div class="food-title">
+
+                    <h3>Greek Garden Salad</h3>
+
+                    <button class="favorite">♡</button>
+
+                </div>
+
+                <p>
+                    Feta, olives, cucumber, tomato and
+                    house dressing.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>₹329</strong>
+
+                    <button class="add-cart"
+                        data-name="Greek Garden Salad"
+                        data-price="329">
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ITEM 5 -->
+
+        <article
+            class="menu-card"
+            data-category="indian"
+            data-name="paneer tikka"
+        >
+
+            <div class="food-image paneer-tikka"></div>
+
+            <div class="food-content">
+
+                <div class="food-title">
+
+                    <h3>Smoked Paneer Tikka</h3>
+
+                    <button class="favorite">♡</button>
+
+                </div>
+
+                <p>
+                    Char-grilled paneer with peppers,
+                    onion and smoky spices.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>₹379</strong>
+
+                    <button class="add-cart"
+                        data-name="Smoked Paneer Tikka"
+                        data-price="379">
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ITEM 6 -->
+
+        <article
+            class="menu-card"
+            data-category="dessert"
+            data-name="chocolate dessert"
+        >
+
+            <div class="food-image chocolate"></div>
+
+            <div class="food-content">
+
+                <div class="food-title">
+
+                    <h3>Chocolate Lava Cake</h3>
+
+                    <button class="favorite">♡</button>
+
+                </div>
+
+                <p>
+                    Warm chocolate cake with a molten
+                    chocolate center.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>₹299</strong>
+
+                    <button class="add-cart"
+                        data-name="Chocolate Lava Cake"
+                        data-price="299">
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- UNIQUE FEATURES -->
+
+<section id="specials" class="section features-section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">MORE THAN FOOD</p>
+
+        <h2>A dining experience you'll remember</h2>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <span>🎧</span>
+
+            <h3>Live Music Nights</h3>
+
+            <p>
+                Enjoy acoustic performances every Friday
+                and Saturday evening.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <span>👨‍🍳</span>
+
+            <h3>Chef's Table</h3>
+
+            <p>
+                Watch our chefs create a personalized
+                multi-course experience.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <span>🌱</span>
+
+            <h3>Farm to Table</h3>
+
+            <p>
+                Seasonal ingredients sourced from
+                trusted local farms.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <span>🎁</span>
+
+            <h3>Surprise Dessert</h3>
+
+            <p>
+                Celebrate your special day with a
+                complimentary surprise from us.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- OFFER -->
+
+<section class="offer">
+
+    <div>
+
+        <p class="eyebrow">THIS WEEKEND</p>
+
+        <h2>Chef's Tasting Experience</h2>
+
+        <p>
+            5 courses • Welcome drink • Dessert
+        </p>
+
+    </div>
+
+    <div class="offer-price">
+
+        <span>Only</span>
+
+        <strong>₹1,499</strong>
+
+        <small>per person</small>
+
+    </div>
+
+    <a href="#reservation" class="primary-btn">
+        Book Experience
+    </a>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section id="reviews" class="section reviews">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">GUEST LOVE</p>
+
+        <h2>What our guests say</h2>
+
+    </div>
+
+    <div class="review-container">
+
+        <button class="review-arrow" id="prevReview">
+            ←
+        </button>
+
+        <div class="review-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p id="reviewText">
+                "Absolutely beautiful restaurant.
+                The food, atmosphere and service were
+                exceptional."
+            </p>
+
+            <strong id="reviewAuthor">
+                — Ananya Sharma
+            </strong>
+
+        </div>
+
+        <button class="review-arrow" id="nextReview">
+            →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- RESERVATION -->
+
+<section id="reservation" class="section reservation">
+
+    <div class="reservation-info">
+
+        <p class="eyebrow">RESERVATIONS</p>
+
+        <h2>Make your evening special.</h2>
+
+        <p>
+            Reserve your table and let us take care
+            of the rest.
+        </p>
+
+        <div class="contact-info">
+
+            <p>📍 24 Olive Street, Bengaluru</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ hello@saffronember.com</p>
+
+        </div>
+
+    </div>
+
+
+    <form id="reservationForm">
+
+        <div class="form-row">
+
+            <input
+                type="text"
+                id="guestName"
+                placeholder="Your name"
+                required
+            >
+
+            <input
+                type="tel"
+                placeholder="Phone number"
+                required
+            >
+
+        </div>
+
+        <div class="form-row">
+
+            <input
+                type="date"
+                id="reservationDate"
+                required
+            >
+
+            <select required>
+
+                <option value="">
+                    Select time
+                </option>
+
+                <option>12:30 PM</option>
+                <option>1:30 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+
+            </select>
+
+        </div>
+
+        <select required>
+
+            <option value="">
+                Number of guests
+            </option>
+
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5 Guests</option>
+            <option>6+ Guests</option>
+
+        </select>
+
+        <textarea
+            placeholder="Special requests (optional)"
+        ></textarea>
+
+        <button class="primary-btn" type="submit">
+            Reserve My Table
+        </button>
+
+        <p id="reservationMessage"></p>
+
+    </form>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <div class="logo">
+            ✦ Saffron & Ember
+        </div>
+
+        <p>
+            Food that brings people together.
+        </p>
+
+    </div>
+
+    <div>
+
+        <h4>Explore</h4>
+
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+
+    </div>
+
+    <div>
+
+        <h4>Visit</h4>
+
+        <p>24 Olive Street</p>
+        <p>Bengaluru, India</p>
+
+    </div>
+
+    <div>
+
+        <h4>Opening Hours</h4>
+
+        <p>Mon – Thu: 12 PM – 10 PM</p>
+        <p>Fri – Sun: 12 PM – 11 PM</p>
+
+    </div>
+
+</footer>
+
+
+<!-- CART SIDEBAR -->
+
+<div id="cartOverlay" class="cart-overlay"></div>
+
+<aside id="cartSidebar" class="cart-sidebar">
+
+    <div class="cart-header">
+
+        <h2>Your Order</h2>
+
+        <button id="closeCart">×</button>
+
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-total">
+
+        <span>Total</span>
+
+        <strong>
+            ₹<span id="cartTotal">0</span>
+        </strong>
+
+    </div>
+
+    <button id="checkoutBtn" class="primary-btn">
+        Checkout
+    </button>
+
+</aside>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
